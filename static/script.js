@@ -24,3 +24,4 @@ function addToCart(productName, price) {
     listItem.textContent = productName + ' - $' + price;
     cartList.appendChild(listItem);
 }
+

@@ -41,3 +41,5 @@ def index():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+#12:10 01.11.2023 version
