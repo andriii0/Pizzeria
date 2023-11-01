@@ -16,14 +16,15 @@
             <h2>Menu</h2>
 
             <div class="categories">
-                <button class="category-btn" onclick="filterCategory('all')">All</button>
-                <button class="category-btn" onclick="filterCategory('Pizza')">Pizza</button>
-                <button class="category-btn" onclick="filterCategory('Drinks')">Drinks</button>
+                <button class="category-btn" onclick="filterCategory('all', 'all')">All</button>
+                <button class="category-btn" onclick="filterCategory('Pizza', 'Meat')">Meat Pizzas</button>
+                <button class="category-btn" onclick="filterCategory('Pizza', 'Vegetarian')">Vegetarian Pizzas</button>
+                <button class="category-btn" onclick="filterCategory('Drinks', 'all')">Drinks</button>
             </div>
 
             <div class="products">
                 {% for product in products %}
-                <div class="product {{ product.type }}">
+                <div class="product {{ product.type }} {{ product.section }}">
                     <img src="{{ url_for('static', filename='images/' + product.image) }}" alt="{{ product.name }}">
                     <h3>{{ product.name }}</h3>
                     <p>{{ product.type }}</p>

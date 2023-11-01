@@ -1,15 +1,18 @@
-function filterCategory(category) {
+function filterCategory(category, subsection) {
     var products = document.getElementsByClassName('product');
     for (var i = 0; i < products.length; i++) {
         var product = products[i];
-        if (category === 'all' || product.classList.contains(category)) {
+        var productCategory = product.classList.contains('Pizza') ? 'Pizza' : 'Drinks';
+        var productSubsection = product.classList.contains('Meat') ? 'Meat' : 'Vegetarian'; // Assuming there are only two subsections: Meat and Vegetarian
+
+        if ((category === 'all' || productCategory === category) &&
+            (subsection === 'all' || productSubsection === subsection)) {
             product.style.display = 'block';
         } else {
             product.style.display = 'none';
         }
     }
 }
-
 function addToCart(productName, price) {
     var cartList = document.getElementById('cart-list');
     var totalAmountElement = document.getElementById('total-amount');
