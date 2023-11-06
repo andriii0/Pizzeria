@@ -1,0 +1,212 @@
+{
+  "menu": [
+    {
+      "name": "Pizza Margarita",
+      "type": "Pizza",
+      "section": "Vegetarian",
+      "price": 12,
+      "image": "margarita.jpg",
+      "desc": "Classic Margarita pizza with rich tomato sauce, melted cheese, and fresh basil leaves."
+    },
+    {
+      "name": "Pizza Salami",
+      "type": "Pizza",
+      "section": "Meat",
+      "price": 16,
+      "image": "salami.jpg",
+      "desc": "Savory Salami pizza featuring spicy salami slices, gooey cheese, and zesty tomato sauce."
+    },
+    {
+      "name": "Pizza Diavollo",
+      "type": "Pizza",
+      "section": "Meat",
+      "price": 14,
+      "image": "diavollo.jpg",
+      "desc": "Fiery Diavollo pizza topped with hot peppers, pepperoni, cheese, and a kick of chili flakes."
+    },
+    {
+      "name": "Pizza Tuna",
+      "type": "Pizza",
+      "section": "Meat",
+      "price": 13,
+      "image": "tuna.jpg",
+      "desc": "Delicious Tuna pizza with tuna chunks, melted cheese, and a blend of Italian spices."
+    },
+    {
+      "name": "Pizza Bolonieze",
+      "type": "Pizza",
+      "section": "Meat",
+      "price": 14,
+      "image": "bolonieze.jpg",
+      "desc": "Hearty Bolonieze pizza topped with minced meat, onions, bell peppers, and savory tomato sauce."
+    },
+    {
+      "name": "Pizza Speciale",
+      "type": "Pizza",
+      "section": "Meat",
+      "price": 15,
+      "image": "speciale.jpg",
+      "desc": "Specialty Speciale pizza with a medley of meats, cheese, olives, and a burst of flavorful sauces."
+    },
+    {
+      "name": "Pizza Hawaii",
+      "type": "Pizza",
+      "section": "Meat",
+      "price": 13,
+      "image": "hawaii.jpg",
+      "desc": "Tropical Hawaii pizza with ham, pineapple, cheese, and a hint of barbecue sauce."
+    },
+    {
+      "name": "Pizza Quadro Formacci",
+      "type": "Pizza",
+      "section": "Vegetarian",
+      "price": 11,
+      "image": "quadroformacci.jpg",
+      "desc": "Quadro Formacci pizza featuring a blend of four cheeses, fresh basil, and tangy tomato sauce."
+    },
+    {
+      "name": "Pizza Quadro Stagione",
+      "type": "Pizza",
+      "section": "Vegetarian",
+      "price": 11,
+      "image": "quadrostagione.jpg",
+      "desc": "Quadro Stagione pizza with a mix of seasonal vegetables, cheese, and a drizzle of olive oil."
+    },
+    {
+      "name": "Pizza Francesko",
+      "type": "Pizza",
+      "section": "Vegetarian",
+      "price": 12,
+      "image": "francesko.jpg",
+      "desc": "Francesko pizza loaded with fresh vegetables, olives, cheese, and aromatic Italian herbs."
+    },
+    {
+      "name": "Coca Cola",
+      "type": "Drinks",
+      "section": "Cold",
+      "price": 7,
+      "image": "cocacola.jpg",
+      "desc": "Refreshing Coca Cola served ice-cold, perfect to quench your thirst and lift your spirits."
+    },
+    {
+      "name": "Pepsi",
+      "type": "Drinks",
+      "section": "Cold",
+      "price": 6,
+      "image": "pepsi.jpg",
+      "desc": "Cool and fizzy Pepsi, a timeless cola drink that satisfies your craving for a classic taste."
+    },
+    {
+      "name": "Sprite",
+      "type": "Drinks",
+      "section": "Cold",
+      "price": 6,
+      "image": "sprite.jpg",
+      "desc": "Sprite, the lemon-lime soda with a burst of citrusy freshness, perfect for a tangy twist."
+    },
+    {
+      "name": "Fanta",
+      "type": "Drinks",
+      "section": "Cold",
+      "price": 6,
+      "image": "fanta.jpg",
+      "desc": "Fanta, the orange-flavored soda that brings a pop of fruity flavor and effervescent delight."
+    },
+    {
+      "name": "Lemonade",
+      "type": "Drinks",
+      "section": "Cold",
+      "price": 5,
+      "image": "lemonade.jpg",
+      "desc": "Zesty Lemonade made with freshly squeezed lemons, sugar, and chilled water, a refreshing choice."
+    },
+    {
+      "name": "Iced Tea",
+      "type": "Drinks",
+      "section": "Cold",
+      "price": 5,
+      "image": "icedtea.jpg",
+      "desc": "Iced Tea, a cool and invigorating blend of tea leaves, served with ice for a delightful experience."
+    },
+    {
+      "name": "Orange Juice",
+      "type": "Drinks",
+      "section": "Cold",
+      "price": 8,
+      "image": "orangejuice.jpg",
+      "desc": "Freshly squeezed Orange Juice, packed with vitamin C, offering a sweet and citrusy indulgence."
+    },
+    {
+      "name": "Apple Juice",
+      "type": "Drinks",
+      "section": "Cold",
+      "price": 8,
+      "image": "applejuice.jpg",
+      "desc": "Pure Apple Juice, the essence of ripe apples in a glass, a natural and wholesome beverage."
+    },
+    {
+      "name": "Mineral Water",
+      "type": "Drinks",
+      "section": "Cold",
+      "price": 4,
+      "image": "mineralwater.jpg",
+      "desc": "Mineral Water, crisp and refreshing, sourced from natural springs to hydrate and revitalize."
+    },
+    {
+      "name": "Milkshake",
+      "type": "Drinks",
+      "section": "Cold",
+      "price": 9,
+      "image": "milkshake.jpg",
+      "desc": "Creamy Milkshake blended with your favorite flavor, a luscious treat to satisfy your sweet tooth."
+    },
+    {
+      "name": "Green Tea",
+      "type": "Drinks",
+      "section": "Hot",
+      "price": 7,
+      "image": "greentea.jpg",
+      "desc": "Green Tea, a soothing and aromatic beverage with antioxidant properties, perfect for relaxation."
+    },
+    {
+      "name": "Jasmine Tea",
+      "type": "Drinks",
+      "section": "Hot",
+      "price": 7,
+      "image": "jasminetea.jpg",
+      "desc": "Jasmine Tea, fragrant and delicate, brewed to perfection, offering a floral note with every sip."
+    },
+    {
+      "name": "Black Tea",
+      "type": "Drinks",
+      "section": "Hot",
+      "price": 7,
+      "image": "blacktea.jpg",
+      "desc": "Black Tea, bold and robust, with a deep flavor profile and a revitalizing kick to start your day."
+    },
+    {
+      "name": "Hot Choco",
+      "type": "Drinks",
+      "section": "Hot",
+      "price": 7,
+      "image": "hotchoco.jpg",
+      "desc": "Rich and velvety Hot Chocolate, indulgent and comforting, topped with a dollop of whipped cream."
+    },
+    {
+      "name": "Americano",
+      "type": "Drinks",
+      "section": "Hot",
+      "price": 7,
+      "image": "americano.jpg",
+      "desc": "Americano, a strong and bold espresso-based coffee, perfect for coffee enthusiasts seeking a robust flavor."
+    },
+    {
+      "name": "Espresso",
+      "type": "Drinks",
+      "section": "Hot",
+      "price": 7,
+      "image": "espresso.jpg",
+      "desc": "Espresso, a concentrated shot of pure coffee essence, providing an intense and aromatic caffeine boost."
+    }
+  ]
+}

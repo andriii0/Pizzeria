@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='cartstyles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+    </header>
+
+    <div class="container">
+        <div class="cart-panel">
+            <ul>
+                {% for cart_item in cart_items %}
+                    <li>{{ cart_item['name'] }} - ${{ cart_item['price'] }} x{{ cart_item['quantity'] }}</li>
+                {% endfor %}
+
+            </ul>
+            <p>Total amount: ${{ total_price }}</p>
+        </div>
+    </div>
+
+    <div id="payment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePaymentModal()">&times;</span>
+            <h2>Choose Payment Method</h2>
+            <button class="payment-method-btn pay-btn-modal" onclick="processPayment('card')">Credit Card</button>
+            <button class="payment-method-btn pay-btn-modal" onclick="processPayment('cash')">Cash</button>
+        </div>
+    </div>
+
+    <button class="pay-btn-modal" onclick="openPaymentModal()">Pay</button>
+    <button class="add-more-btn" onclick="redirectToMenu()">Want to add something?</button>
+</body>
+</html>
