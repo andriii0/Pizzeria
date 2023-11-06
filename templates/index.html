@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzeria M&L</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -17,9 +20,17 @@
 
             <div class="categories">
                 <button class="category-btn" onclick="filterCategory('all', 'all')">All</button>
-                <button class="category-btn" onclick="filterCategory('Pizza', 'Meat')">Meat Pizzas</button>
-                <button class="category-btn" onclick="filterCategory('Pizza', 'Vegetarian')">Vegetarian Pizzas</button>
+                <button class="category-btn" onclick="filterCategory('Pizza', 'all')">Pizzas</button>
                 <button class="category-btn" onclick="filterCategory('Drinks', 'all')">Drinks</button>
+
+                <div class="subcategories-pizzas">
+                    <button class="category-btn" onclick="filterCategory('Pizza', 'Meat')">Meat Pizzas</button>
+                    <button class="category-btn" onclick="filterCategory('Pizza', 'Vegetarian')">Vegetarian Pizzas</button>
+                </div>
+                <div class="subcategories-drinks">
+                    <button class="category-btn" onclick="filterCategory('Drinks', 'Cold')">Cold Drinks</button>
+                    <button class="category-btn" onclick="filterCategory('Drinks', 'Hot')">Hot Drinks</button>
+                </div>
             </div>
 
             <div class="products">
@@ -27,7 +38,7 @@
                 <div class="product {{ product.type }} {{ product.section }}">
                     <img src="{{ url_for('static', filename='images/' + product.image) }}" alt="{{ product.name }}">
                     <h3>{{ product.name }}</h3>
-                    <p>{{ product.type }}</p>
+                    <p>{{ product.desc }}</p>
                     <p class="price">Price: ${{ product.price }}</p>
                     <button class="add-to-cart-btn" onclick="addToCart('{{ product.name }}', {{ product.price }})">Add</button>
                 </div>
@@ -37,11 +48,21 @@
 
         <div class="cart-panel">
             <h2>Cart</h2>
-            <ul id="cart-list"></ul>
-            <p id="total-price">Total amount: $<span id="total-amount">0.00</span></p>
-        </div>
-    </div>
+            <ul>
+                {% for cart_item in cart_items %}
+                    <li>{{ cart_item['name'] }} - ${{ cart_item['price'] }} x{{ cart_item['quantity'] }}</li>
+                {% endfor %}
 
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+            </ul>
+            <p>Total amount: ${{ total_price }}</p>
+            <button class="clear-cart-btn" onclick="clearCart()">Clear Cart</button>
+            <button class="purchase-btn" onclick="redirectToCheckout()">Purchase</button>
+        </div>
+
+
+    </div>
+    <footer>
+
+    </footer>
 </body>
 </html>

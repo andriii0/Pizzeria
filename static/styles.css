@@ -40,6 +40,10 @@ header {
     cursor: pointer;
 }
 
+.category-btn:hover {
+    background-color: #555;
+}
+
 .product {
     background-color: #fff;
     padding: 1rem;
@@ -62,6 +66,10 @@ header {
     cursor: pointer;
 }
 
+.add-to-cart-btn:hover {
+    background-color: #45a049;
+}
+
 .cart-panel {
     width: 250px;
     position: fixed;
@@ -71,6 +79,46 @@ header {
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.cart-panel ul {
+    list-style: none;
+    padding: 0;
+}
+.cart-panel li {
+    margin-bottom: 0.5rem;
+}
+
+.cart-panel .total-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.clear-cart-btn,
+.purchase-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.clear-cart-btn:hover,
+.purchase-btn:hover {
+    background-color: #45a049;
+}
+
+.subcategories-pizzas,
+.subcategories-drinks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.subcategories-pizzas .category-btn,
+.subcategories-drinks .category-btn {
+    margin: 0;
 }
 
 ul {
@@ -82,8 +130,72 @@ ul {
     font-weight: bold;
 }
 
-.total-price {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-top: 1rem;
+.clear-cart-btn:hover,
+.purchase-btn:hover {
+    background-color: #45a049;
 }
+
+
+.add-to-cart-btn,
+.clear-cart-btn,
+.purchase-btn,
+.category-btn,
+.subcategories-pizzas .category-btn,
+.subcategories-drinks .category-btn {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Анимация при наведении на кнопки */
+.add-to-cart-btn:hover,
+.clear-cart-btn:hover,
+.purchase-btn:hover,
+.category-btn:hover,
+.subcategories-pizzas .category-btn:hover,
+.subcategories-drinks .category-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Анимация при нажатии на кнопки */
+.add-to-cart-btn:active,
+.clear-cart-btn:active,
+.purchase-btn:active,
+.category-btn:active,
+.subcategories-pizzas .category-btn:active,
+.subcategories-drinks .category-btn:active {
+    transform: scale(1);
+}
+
+/* Стили для кнопок категорий и субкатегорий */
+.category-btn,
+.subcategories-pizzas .category-btn,
+.subcategories-drinks .category-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Стили для кнопок категорий и субкатегорий при наведении */
+.category-btn:hover,
+.subcategories-pizzas .category-btn:hover,
+.subcategories-drinks .category-btn:hover {
+    background-color: #555;
+}
+
+
+
+
+.subcategories-pizzas {
+    display: none;
+}
+
+.subcategories-drinks {
+    display: none;
+}
+
+
